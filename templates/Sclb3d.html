@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  left: 50px;
+  width: 50%;
+  height: 100%;
+  left: 50px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0px;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<h2> Bus Skyline 2075(School Bus)</h2>
+<p>Choose your destination in below.</p>
+
+<div class="container">
+  <img src="/static/img/Scl3.JPG" alt="BUS" class="image">
+  <div class="overlay">
+    <div class="text">Your choosen BusSkyline 2075(School Bus)</div>
+  </div>
+</div>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create a column layout with Flexbox */
+.row {
+  display: flex;
+}
+
+/* Left column (menu) */
+.left {
+  flex: 35%;
+  padding: 15px 0;
+}
+
+.left h2 {
+  padding-left: 8px;
+}
+
+/* Right column (page content) */
+.right {
+  flex: 65%;
+  padding: 15px;
+}
+
+/* Style the search box */
+#mySearch {
+  width: 100%;
+  font-size: 18px;
+  padding: 11px;
+  border: 1px solid #ddd;
+}
+
+/* Style the navigation menu inside the left column */
+#myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color:#0000FF;
+}
+
+#myMenu li a {
+  padding: 12px;
+  text-decoration:none;
+  color:white;
+  display: block
+}
+
+#myMenu li a:hover {
+  background-color:#808000;
+}
+</style>
+</head>
+<body>
+
+<h2>Search Your  City and Destination Plan</h2>
+<p>Search With name Of Your City OR Destination</p>
+
+<div class="row">
+  <div class="left" style="background-color:#bbb;">
+    <h2>Menu</h2>
+    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+    <ul id="myMenu">
+      <li><a href="/Sclb3dpricebplgoa">Bhopal - Goa</a></li>
+      <li><a href="#">Bhopal - kedarnath</a></li>
+      <li><a href="#">Bhopal - Manali</a></li>
+      <li><a href="#">Bhopal - Prayagraj</a></li>
+      <li><a href="#">Bhopal - Agra</a></li>
+      <li><a href="#">Bhopal -Jammu and Kashmir</a></li>
+      <li><a href="#">Bhopal - Tirupati Balaji</a></li>
+      <li><a href="#">Tour in Bhopal</a></li>
+      <li><a href="#">Bhopal - Haridwar</a></li>
+    </ul>
+  </div>
+  
+<script>
+function myFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
+
+</body>
+</html>

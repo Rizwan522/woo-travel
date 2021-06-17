@@ -74,6 +74,115 @@ def Tatabus1pricebplGoa(request):
    
 def tatabus2pricingbplgoa(request):
     return render(request,'tatabus2pricingbplgoa.html')
+
+def Tatab3d(request):
+    return render(request,'Tatab3d.html')
+
+def Tatab3pricebplgoa(request):
+    return render(request,'Tatab3pricebplgoa.html')
+
+def Volvob1d(request):
+    return render(request,'Volvob1d.html')
+
+def Volvob2d(request):
+    return render(request,'Volvob2d.html')
+
+def Volvob3d(request):
+    return render(request,'Volvob3d.html')
+
+def Volvob1dpricebplgoa(request):
+    return render(request,'Volvob1dpricebplgoa.html')
+
+def Volvob2dpricebplgoa(request):
+    return render(request,'Volvob2dpricebplgoa.html')
+
+def Volvob3dpricebplgoa(request):
+    return render(request,'Volvob3dpricebplgoa.html')
+
+def MCB1d(request):
+    return render(request,'MCB1d.html')
+
+def MCB2d(request):
+    return render(request,'MCB2d.html')
+
+def MCB3d(request):
+    return render(request,'MCB3d.html')
+
+def MCB1pricebplgoa(request):
+    return render(request,'MCB1pricebplgoa.html')
+
+def MCB2pricebplgoa(request):
+    return render(request,'MCB2pricebplgoa.html')
+
+def MCB3pricebplgoa(request):
+    return render(request,'MCB3pricebplgoa.html')
+def Sclb1d(request):
+    return render(request,'Sclb1d.html')
+def Sclb2d(request):
+    return render(request,'Sclb2d.html')
+def Sclb3d(request):
+    return render(request,'Sclb3d.html')
+
+def Sclb1dpricebplgoa(request):
+    return render(request,'Sclb1dpricebplgoa.html')
+
+def Sclb2dpricebplgoa(request):
+    return render(request,'Sclb2dpricebplgoa.html')
+
+def Sclb3dpricebplgoa(request):
+    return render(request,'Sclb3dpricebplgoa.html')
+
+def payment(request):
+    return render(request,'payment.html')
+
+def Sc1d(request):
+    return render(request,'Sc1d.html')
+
+def Sc2d(request):
+    return render(request,'Sc2d.html')
+
+def Sc3d(request):
+    return render(request,'Sc3d.html')
+
+def Sc1pricebplgoa(request):
+    return render(request,'Sc1pricebplgoa.html')
+
+def Sc2pricebplgoa(request):
+    return render(request,'Sc2pricebplgoa.html')
+
+def Sc3pricebplgoa(request):
+    return render(request,'Sc3pricebplgoa.html')
+
+def Asb1d(request):
+    return render(request,'Asb1d.html')
+
+def Asb2d(request):
+    return render(request,'Asb2d.html')
+
+def Asb1dpricebplgoa(request):
+    return render(request,'Asb1dpricebplgoa.html')
+
+def Asb2dpricebplgoa(request):
+    return render(request,'Asb2dpricebplgoa.html')
+    
+def Br1d(request):
+    return render(request,'Br1d.html')
+
+def Br1dpricebplgoa(request):
+    return render(request,'Br1dpricebplgoa.html')
+
+def Br2d(request):
+    return render(request,'Br2d.html')
+
+def Br2dpricebplgoa(request):
+    return render(request,'Br2dpricebplgoa.html')
+
+def Br3d(request):
+    return render(request,'Br3d.html')
+
+def Br3dpricebplgoa(request):
+    return render(request,'Br3dpricebplgoa.html')
+
     
     
 
