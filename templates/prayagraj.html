@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<head>
+    <title>PRAYAGRAJ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        .mySlides {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2 class="w3-center">PRAYAGRAJ</h2>
+    <div class="container-fluid">
+        <div class="w3-content w3-section" style="max-width:500px">
+            <img class="mySlides" src="/static/prayagraj_img/pryag1.jpg" style="width:100%">
+            <img class="mySlides" src="/static/prayagraj_img/pryag2.jpg" style="width:100%">
+            <img class="mySlides" src="/static/prayagraj_img/pryag3.jpg" style="width:100%">            
+            <img class="mySlides" src="/static/prayagraj_img/pryag4.jpg" style="width:100%">            
+            
+        </div>
+    </div>
+
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+    </script>
+
+    <div class="w3-container">
+        <h2>ABOUT PRAYAGRAJ </h2>
+        <p>Allahabad lies close to Triveni Sangam, the "three-river confluence" of the Ganges, Yamuna and Sarasvati
+            rivers.[1] It plays a central role in Hindu scriptures. The city finds its earliest reference as one of the
+            world's oldest known cities in Hindu mythological texts and has been venerated as the holy city of Prayaga
+            in the ancient Vedas. Allahabad was also known as Kosambi in the late Vedic period, named by the Kuru rulers
+            of Hastinapur, who developed it as their capital. </p>
+
+        <div class="w3-dropdown-click">
+            <button onclick="myFunction()" class="w3-button w3-black">Select Vehicle</button>
+            <div id="Demo" class="w3-dropdown-content w3-bar-block w3-card-4 w3-animate-zoom">
+                <a href="carbooking" class="w3-bar-item w3-button">BY Car</a>
+                <a href="busbooking" class="w3-bar-item w3-button">BY Bus</a>
+                <a href="bookyourmotorbike" class="w3-bar-item w3-button">BY Bike</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("Demo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+
+</body>
+
+</html>

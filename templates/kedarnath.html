@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<head>
+  <title>KEDARNATH</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style>
+    .mySlides {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2 class="w3-center">KEDARNATH</h2>
+  <div class="container-fluid">
+    <div class="w3-content w3-section" style="max-width:500px">
+      <img class="mySlides" src="/static/kedarnth_img/kedarnath1.jpg" style="width:100%">
+      <img class="mySlides" src="/static/kedarnth_img/kedarnath2.jpg" style="width:100%">
+      <img class="mySlides" src="/static/kedarnth_img/kedarnath3.jpg" style="width:100%">
+      <img class="mySlides" src="/static/kedarnth_img/kedarnath4.jpg" style="width:100%">
+    </div>
+  </div>
+
+  <script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) { myIndex = 1 }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+  </script>
+
+  <div class="w3-container">
+    <h2> ABOUT KEDARNATH</h2>
+    <p>Kedarnath is a town in the Indian state of Uttarakhand and has gained importance because of Kedarnath Temple. It
+      is a nagar panchayat in Rudraprayag district. The most remote of the four Chota Char Dham sites, Kedarnath is
+      located in the Himalayas, about 3,583 m (11,755 ft) above sea level near Chorabari Glacier, the source of river
+      Mandakini, and is flanked by snow-capped peaks, most prominently Kedarnath mountain. The nearest road head is at
+      Gaurikund about 16kms away.</p>
+
+    <div class="w3-dropdown-click">
+      <button onclick="myFunction()" class="w3-button w3-black">Select Vehicle</button>
+      <div id="Demo" class="w3-dropdown-content w3-bar-block w3-card-4 w3-animate-zoom">
+        <a href="carbooking" class="w3-bar-item w3-button">BY Car</a>
+        <a href="busbooking" class="w3-bar-item w3-button">BY Bus</a>
+        <a href="bookyourmotorbike" class="w3-bar-item w3-button">BY Bike</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("Demo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+  </script>
+
+</body>
+
+</html>

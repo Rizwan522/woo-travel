@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<head>
+    <title>VARANSHI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        .mySlides {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2 class="w3-center">VARANSHI</h2>
+    <div class="container-fluid">
+        <div class="w3-content w3-section" style="max-width:500px">
+            <img class="mySlides" src="/static/vanaras_img/vanaras1.jpg" style="width:100%">
+            <img class="mySlides" src="/static/vanaras_img/vanaras2.jpg" style="width:100%">
+            <img class="mySlides" src="/static/vanaras_img/vanaras3.jpg" style="width:100%">
+            <img class="mySlides" src="/static/vanaras_img/vanaras4.jpg" style="width:100%">
+        </div>
+    </div>
+
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+    </script>
+
+    <div class="w3-container">
+        <h2>ABOUT VARANSHI</h2>
+        <p>Varanasi is a city in the northern Indian state of Uttar Pradesh dating to the 11th century B.C. Regarded as
+            the spiritual capital of India, the city draws Hindu pilgrims who bathe in the Ganges River’s sacred waters
+            and perform funeral rites. Along the city's winding streets are some 2,000 temples, including Kashi
+            Vishwanath, the “Golden Temple,” dedicated to the Hindu god Shiva. </p>
+
+        <div class="w3-dropdown-click">
+            <button onclick="myFunction()" class="w3-button w3-black">Select Vehicle</button>
+            <div id="Demo" class="w3-dropdown-content w3-bar-block w3-card-4 w3-animate-zoom">
+                <a href="carbooking" class="w3-bar-item w3-button">BY Car</a>
+                <a href="busbooking" class="w3-bar-item w3-button">BY Bus</a>
+                <a href="bookyourmotorbike" class="w3-bar-item w3-button">BY Bike</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("Demo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
